@@ -1,0 +1,21 @@
+<%# views/index.ejs %>
+
+<% extend('layout') %>
+
+REGISTER
+
+<form method='post' action='/register' >
+  <div>
+    <label for="username">Username:</label>
+    <input type="text" name="username" aria-required="true"/>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="text" name="password" aria-required="true"/>
+   </div>
+     <div>
+    <label for="confirm">Confirm Password:</label>
+    <input type="text" name="confirm" aria-required="true"/>
+   </div>
+   <button type='submit'>Submit</button>
+</form>
